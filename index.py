@@ -11,10 +11,5 @@ def home():
 def about():
     return render_template('about.html')
 
-@app.route("/math")
-def is_negativo():
-    number = -100
-    return render_template('math.html', num = number)
-
 if __name__ == "__main__":
     app.run(debug=True)
